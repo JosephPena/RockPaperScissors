@@ -4,8 +4,21 @@ $(document).ready(function(){
 
 	function compChoice(){
 		// function which will determine what the computer has to choose againt the user
-		//choice options will randomize from 0 to 2 inclusive
-		var choice = Math.floor(Math.random()*3);
+		// updated choice options to randomize from 1-3 inclusive
+		var choice = Math.ceil(Math.random()*3);
+
+		if(choice === 1) {
+			// do some stuff
+
+		}else if (choice === 2){
+			// do some stuff
+
+		}else if (choice ===3){
+
+			// do some stuff
+		}
+
+
 	}
 
 	function matchup(){

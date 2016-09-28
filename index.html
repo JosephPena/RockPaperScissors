@@ -5,6 +5,7 @@
 		<title>Rock, Paper, Scissors</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="application.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
 		<div class="container"></div>
@@ -12,11 +13,10 @@
 				<h1>Welcome to Rock, Paper, Scissors</h1>
 			</header>
 
-
-			<input type="number" placeholder="Enter Minutes" required></input>
-			<input type="number" placeholder="Enter Seconds" required></input>
-			<button type="submit">Submit</button>
-
+			<section class="time-input">
+				<input class="reset-minutes"type="number" placeholder="Enter Minutes" required></input>
+				<button class="submit-button"type="submit">Submit</button>
+			</section>
 
 			<!-- will consider wrapping inside an a tag to make image clickable -->
 			<img id="rock" src="img/rock.png" alt="icon of rock">

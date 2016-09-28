@@ -11,6 +11,12 @@ $(document).ready(function(){
 		}
 	});
 
+//submit button to retrieve value of minutes
+	$(".submit-button").on("click", function(){
+		var value = $(".minutes").val();
+		console.log(value)
+	});
+
 //Computer Function that randomly selects a value between 1-3.  Tied to a rock,paper,scissor option
 	function choice(){
 		var choice = Math.ceil(Math.random()*3);
@@ -29,13 +35,16 @@ $(document).ready(function(){
 //matchup function that will eventually challenge user vs computer
 	function matchUp(userChoice){
 		var compChoice = choice();
+		var userWin = "You Win!";
+		var userLose = "You Lost!";
+		var userTie = "It's a tie!";
 
 		if(userChoice === "rock"){
-			console.log("user eval-rock working")
+			alert(compChoice === "rock" ? userTie : compChoice === "paper" ? userLose : userWin);
 		}else if (userChoice === "paper"){
-			console.log("user eval-paper working")
+			alert(compChoice === "rock" ? userTie : compChoice === "paper" ? userLose : userWin);
 		}else if (userChoice === "scissors") {
-			console.log("user eval-scissors working")
+			alert(compChoice === "rock" ? userTie : compChoice === "paper" ? userLose : userWin);
 		}
 	};
 

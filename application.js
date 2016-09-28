@@ -13,8 +13,12 @@ $(document).ready(function(){
 
 //submit button to retrieve value of minutes
 	$(".submit-button").on("click", function(){
-		var value = $(".minutes").val();
-			if(value > 0){
+    var minValue = $(".minutes").val();
+    var secValue = $(".seconds").val();
+
+    if(minValue || secValue > 0){
+        var totalTime = (parseInt(minValue * 60) + Number(secValue));
+      alert(totalTime);
 				//create a timer function later on.
 			}else{
 				alert("Hi!, Please Make A Minutes Selection");

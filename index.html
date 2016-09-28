@@ -13,18 +13,19 @@
 				<h1>Welcome to Rock, Paper, Scissors</h1>
 			</header>
 
-			<section class="time-input">
+			<form class="time-input">
 				<h2>Play Time?</h2>
-				<input class="minutes" type="number" placeholder="minutes" required></input>
+				<input class="minutes" type="number" placeholder="Minutes"></input>
+				<input class="seconds" type="number" placeholder="Seconds" ></input>
 				<button class="submit-button"type="submit">Submit</button>
 				<input class="reset-button" type="reset" value="reset"></input>
-			</section>
+			</form>
 
 			<div class="game-options">
 				<section class="game-header">
-					<h2>Make A Selection</h2>
-					<h2>Time Countdown</h2>
-					<h2>Computer Selection</h2>
+					<h2 class="user-select">Make A Selection</h2>
+					<h2 class="timer">Timer Countdown</h2>
+					<h2 class="comp-select">Computer Selection</h2>
 				</section>
 
 				<table>
@@ -32,15 +33,24 @@
 						<td>
 							<a id="rock" href="#"><img src="img/rock.png" alt="icon of rock"></a>
 						</td>
+						<td>
+							<a class="comp rock" href="#"><img src="img/rock.png" alt="icon of rock"></a>
+						</td>
 					</tr>
 					<tr>
 						<td>
 							<a id="paper" href="#"><img src="img/paper.ico" alt="icon of paper"></a>
 						</td>
+						<td>
+							<a class="comp paper" href="#"><img src="img/paper.ico" alt="icon of paper"></a>
+						</td>
 					</tr>
 					<tr>
 						<td>
 							<a id="scissors" href="#"><img src="img/scissors.png" alt="icon of scissors"></a>
+						</td>
+						<td>
+							<a class="comp scissors" href="#"><img src="img/scissors.png" alt="icon of scissors"></a>
 						</td>
 					</tr>
 				</table>

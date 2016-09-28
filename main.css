@@ -2,19 +2,42 @@ body {
 	background-color: gray;
 }
 
-.game-options {
-
+h1 {
+	text-align: center;
 }
 
-h1{
-	text-align: center;
+.time-input {
+	display: inline;
+}
+
+.game-options {
+  min-height: 200px;
+  height: 100%;
+  width: 70%;
+  padding: 0 4em 3em;
+  color: #ccc;
 }
 
 table {
 	width: 100%;
 }
 
-table img{
+.user-select{
+	display: inline-block;
+	float: left;
+	margin-right: 20%;
+}
+
+.timer {
+	display: inline-block;
+	float:none;
+}
+
+.comp-select {
+	display: inline-block;
+	float: right;
+}
+table img {
 	padding: 3%;
 	border: 6px double #555;
 	border-radius: 50%;
@@ -24,7 +47,5 @@ table img{
 	max-height: 70%;
 }
 
-.time-input {
-	display: inline;
-}
+
 

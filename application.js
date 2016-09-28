@@ -10,26 +10,21 @@ $(document).ready(function(){
 			}else if ($(this).attr("id") === "scissors"){
 				// do stuff
 			}
-		})
+		});
 
-
+//Computer Function that randomly selects a value between 1-3.  Tied to a rock,paper,scissor option
 	function compChoice(){
-		// function which will determine what the computer has to choose againt the user
-		// updated choice options to randomize from 1-3 inclusive
 		var choice = Math.ceil(Math.random()*3);
+		var result;
 
 		if(choice === 1) {
-			// do some stuff
-
+			result = "rock";
 		}else if (choice === 2){
-			// do some stuff
-
-		}else if (choice ===3){
-
-			// do some stuff
+			result = "paper";
+		}else if (choice === 3){
+			result = "scissors";
 		}
-
-
+		return result;
 	}
 
 	function matchup(){

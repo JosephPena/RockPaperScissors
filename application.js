@@ -2,6 +2,17 @@ $(document).ready(function(){
 
 		//  jquery function which will highlight a selector + event + event handler listeining for user selection
 
+		$("a").on("click", function(){
+			if($(this).attr("id") === "rock"){
+				// do stuff
+			}else if($(this).attr("id") === "paper"){
+				// do stuff
+			}else if ($(this).attr("id") === "scissors"){
+				// do stuff
+			}
+		})
+
+
 	function compChoice(){
 		// function which will determine what the computer has to choose againt the user
 		// updated choice options to randomize from 1-3 inclusive

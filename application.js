@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-		//  jquery function which will highlight a selector + event + event handler listeining for user selection
-
+//jquery click event for anchor tags with specific attributes of id.  Evaluating for rock,paper,scissors
 	$("a").on("click", function(){
 		if($(this).attr("id") === "rock"){
 			console.log("rock");
@@ -27,8 +26,8 @@ $(document).ready(function(){
 		return result;
 	};
 
-	function matchup(input){
-		//  eventually matching up the user against the computer option
+//matchup function that will eventually challenge user vs computer
+	function matchUp(input){
 		if(input === "rock"){
 			console.log("user eval-rock working")
 		}else if (input === "paper"){

@@ -14,7 +14,11 @@ $(document).ready(function(){
 //submit button to retrieve value of minutes
 	$(".submit-button").on("click", function(){
 		var value = $(".minutes").val();
-		console.log(value)
+			if(value > 0){
+				//create a timer function later on.
+			}else{
+				alert("Hi!, Please Make A Minutes Selection");
+			}
 	});
 
 //Computer Function that randomly selects a value between 1-3.  Tied to a rock,paper,scissor option

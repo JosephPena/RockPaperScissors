@@ -3,16 +3,16 @@ $(document).ready(function(){
 //jquery click event for anchor tags with specific attributes of id.  Evaluating for rock,paper,scissors
 	$("a").on("click", function(){
 		if($(this).attr("id") === "rock"){
-			console.log("rock");
+			matchUp("rock");
 		}else if($(this).attr("id") === "paper"){
-			console.log("paper");
+			matchUp("paper");
 		}else if ($(this).attr("id") === "scissors"){
-			console.log("scissors");
+			matchUp("scissors");
 		}
 	});
 
 //Computer Function that randomly selects a value between 1-3.  Tied to a rock,paper,scissor option
-	function compChoice(){
+	function choice(){
 		var choice = Math.ceil(Math.random()*3);
 		var result;
 
@@ -27,12 +27,14 @@ $(document).ready(function(){
 	};
 
 //matchup function that will eventually challenge user vs computer
-	function matchUp(input){
-		if(input === "rock"){
+	function matchUp(userChoice){
+		var compChoice = choice();
+
+		if(userChoice === "rock"){
 			console.log("user eval-rock working")
-		}else if (input === "paper"){
+		}else if (userChoice === "paper"){
 			console.log("user eval-paper working")
-		}else if (input === "scissors") {
+		}else if (userChoice === "scissors") {
 			console.log("user eval-scissors working")
 		}
 	};

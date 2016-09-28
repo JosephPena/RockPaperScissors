@@ -9,3 +9,13 @@ h1{
 table {
 	width: 100%;
 }
+
+table img{
+	padding:3%;
+	border: 6px double #555;
+	border-radius: 50%;
+	margin: 2%;
+	vertical-align: text-top;
+	width:2 0%;
+	max-height: 70%;
+}
